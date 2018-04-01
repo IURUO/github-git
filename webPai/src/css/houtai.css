@@ -1,0 +1,31 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.table tbody tr td{
+            vertical-align: middle;
+        }
+li{
+	list-style:none;
+}
+p,h1,h2,h3,h5,h6,ul,ol,dl,li,form,table{
+	margin:0;
+	padding:0;
+}
+#ulD{
+	background-color: #FFFFFF;
+	border:1px #c1c1c1 solid;
+	height:200px;
+}
+#ulD li{
+		display: flex;
+	justify-content: flex-start;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bootstrap modal 垂直居中测试</title>
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../dist/css/houtai.css"/>
+    <meta charset="utf-8">
+  </head>
+  <body>
+	<div class="container" style="background-color: #f5f5f5">
+			<div>
+			<button type="button" class="pull-right btn btn-link" style="margin-top: -5px;">退出</button>
+			<h4>欢迎进入VOTE</h4>
+			</div>
+		    <section class="row" style="background-color: #f5f5f5">
+			  <div class="clearfix visible-xs"></div>
+<div class="col-md-2" style=" border-top:9px #FFFFFF solid;" id="left">
+	<h4 class="media-title" style="padding-top: 10px;">
+				菜单
+		<span id="plus" style="padding-left: 90px;"><a href="#">+</a></span>
+	</h4>
+	<ul id="ulD" style="display: none;">
+		<li><span>+</span>活动管理</li>
+		<li><span>+</span>品牌管理
+						<ul id="ulD1" style="margin-top: 15px; margin-left: -50px; display: none;">
+		<li><span>+</span>全平台管理</li>
+		<li><span>+</span>品牌上传管理</li>
+	</ul>
+		</li>
+		<li><span>+</span>抽奖管理</li>
+		<li><span>+</span>数据管理</li>
+	</ul>
+</div>
+<div class="col-md-10" style="border-left:3px #FFFFFF solid; border-top:6px #FFFFFF solid; background-color: #FFFFFF;" >
+	<form class="form-inline" style="background-color:#f5f5f5;">
+         <label for="name">分类</label>
+    <select id="select">
+      <option>游戏</option>
+      <option>视频</option>
+      <option>音乐</option>
+      <option>酒店机票</option>
+      <option>美食</option>
+    </select>
+    	<span>关键字</span>
+    <input type="text" id="name">
+    <input type="button" id="sou" value="搜索">
+    <button class="btn-primary btn-sm full-right col-mod-3" style="background-color: #c8a46d; border:none; margin-left: 500px;">上传品牌</button>
+	</form>
+	<table class="table table-bordered" style="background-color: #FFFFFF;  border-top:5px #FFFFFF solid;" id="table1">
+  <thead>
+    <tr class="active">
+      <th class="text-center">序号</th>
+      <th class="text-center">logo</th>
+      <th class="text-center">名称</th>
+      <th class="text-center">票数</th>
+      <th class="text-center">编辑</th>
+      <th class="text-center" style="display: none;">ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="tr1">
+      <td class="text-center">1</td>
+      <td class="text-center"><img id="pic1" src="../img/doudizhu.png"/></td>
+      <td class="text-center">欢乐斗地主</td>
+      <td class="text-center">26</td>
+      <td><button type="button" class="btn btn-link center-block" id="btn1">删除</button>
+      	<button type="button" class="btn btn-link center-block" id="bbtn1" style="color:#CE8483; font-size: 13px;">设为特色APP</button>
+      </td>
+      <td style="display: none;"></td>
+    </tr>
+    <tr id="tr2">
+      <td class="text-center" id="url2">2</td>
+      <td class="text-center"><img id="pic1" src="../img/xiaoxiaole.png"/></td>
+      <td class="text-center">开心消消乐</td>
+      <td class="text-center">7</td>
+      <td><button type="button" class="btn btn-link center-block" id="btn2" >删除</button>
+      	<button type="button" class="btn btn-link center-block" id="bbtn2" style="color:#CE8483; font-size: 13px;">设为特色APP</button>
+      </td>
+      <td style="display: none;"></td>
+    </tr>
+    <tr id="tr3">
+      <td class="text-center" id="url3">3</td>
+      <td class="text-center"><img id="pic1" src="../img/猫和老鼠.png"/></td>
+      <td class="text-center">猫和老鼠</td>
+      <td class="text-center">38</td>
+     <td><button type="button" class="btn btn-link center-block" id="btn3">删除</button>
+     <button type="button" class="btn btn-link center-block" id="bbtn3" style="color:#CE8483; font-size: 13px;">设为特色APP</button>
+     </td>
+     <td style="display: none;"></td>
+    </tr>
+        <tr id="tr4">
+      <td class="text-center" id="url4">4</td>
+      <td class="text-center"><img id="pic1" src="../img/menglvr.png"/></td>
+      <td class="text-center">梦旅人</td>
+      <td class="text-center">38</td>
+      <td><button type="button" class="btn btn-link center-block" id="btn4" >删除</button>
+      	<button type="button" class="btn btn-link center-block" id="bbtn4" style="color:#CE8483; font-size: 13px;">设为特色APP</button>
+      </td>
+      <td style="display: none;"></td>
+    </tr>
+        <tr id="tr5">
+      <td class="text-center" id="url5">5</td>
+      <td class="text-center"><img id="pic1" src="../img/kupao.png"/></td>
+      <td class="text-center">天天酷跑</td>
+      <td class="text-center">4</td>
+      <td><button type="button" class="btn btn-link center-block" id="btn5" >删除</button>
+      	<button type="button" class="btn btn-link center-block" id="bbtn5" style="color:#CE8483; font-size: 13px;">设为特色APP</button>
+      </td>
+      <td style="display: none;"></td>
+    </tr>
+        <tr id="tr6">
+      <td class="text-center" id="url6">6</td>
+      <td class="text-center"><img id="pic1" src="../img/wuziqi.png"/></td>
+      <td class="text-center">五子棋</td>
+      <td class="text-center">2</td>
+      <td><button type="button" class="btn btn-link center-block" id="btn6" >删除</button>
+      	<button type="button" class="btn btn-link center-block" id="bbtn6" style="color:#CE8483; font-size: 13px;">设为特色APP</button>
+      </td>
+      <td style="display: none;"></td>
+    </tr>
+        <tr id="tr7">
+      <td class="text-center" id="url7">7</td>
+      <td class="text-center"><img id="pic1" src="../img/kupao.png"/></td>
+      <td class="text-center">梦旅人</td>
+      <td class="text-center">133</td>
+      <td><button type="button" class="btn btn-link center-block" id="btn7" >删除</button>
+      	<button type="button" class="btn btn-link center-block" id="bbtn7" style="color:#CE8483; font-size: 13px;">设为特色APP</button>
+      </td>
+      <td style="display: none;"></td>
+    </tr>
+        <tr id="tr8">
+      <td class="text-center" id="url8">8</td>
+      <td class="text-center"><img id="pic1" src="../img/doudizhu.png"/></td>
+      <td class="text-center">酷跑</td>
+      <td class="text-center">22</td>
+      <td><button type="button" class="btn btn-link center-block" id="btn8" >删除</button>
+      	<button type="button" class="btn btn-link center-block" id="bbtn8" style="color:#CE8483; font-size: 13px;">设为特色APP</button>
+      </td>
+      <td style="display: none;"></td>
+    </tr>
+    <tr>
+    	<td colspan="5" class="text-right">
+    	<p id="p1">	总共<span id="span2">53</span>个记录当前第<span id="span1">1</span>页，总共<span id="span3">15</span>页 | <button type="button" class="btn btn-default btn-xs" style="border: none;">第一页</button>
+    		<button type="button" class="btn btn-default btn-xs" style="border: none;">上一页</button><button type="button" id="button1" class="btn btn-default btn-xs" style="border: none;">下一页</button>
+    		<button type="button" class="btn btn-default btn-xs" style="border: none;">最末页</button>
+    		<select id="select1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+    </p>
+    	</td>
+    </tr>
+  </tbody>
+</table>
+  <div class="text-center table-bordered">
+  	共执行两个查询，用时0.001011秒，内存占用3.139MB</br>版权所有@2005-2012最新版本ZUIXINMOBAN.COM提供技术支持
+  	<![endif]-->
+  </div>
+</div>
+</section>
+</div>
+    <script src="../../dist/js/jquery.min.js"></script>
+    <script src="../../lib/bootstrap.js"></script>
+	  <script src="../../dist/js/houtai.js"></script>
+ </body>
+</html>
